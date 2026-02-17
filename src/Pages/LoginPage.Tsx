@@ -1,9 +1,11 @@
-import { LoginForms } from '../components/LoginForms/LoginForms'
+import { LoginForms } from '../components/LoginForms/LoginForms.modules'
 
 export const LoginPage = () => {
     return (
-        <div>
-            <LoginForms />
-        </div>
+        <>
+            <div>
+                <LoginForms />
+            </div>
+        </>
     )
 }
