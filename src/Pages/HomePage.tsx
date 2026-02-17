@@ -1,14 +1,17 @@
+import styles from './css/HomePage.module.css';
+
 export const HomePage = () => {
 
     return (
         <>
-        <h1>Hey you aren't logged in!</h1>
-        <h3>Log in below</h3>
-        <div className="card">
+        
+        <div>
+            <h1>Hey! you aren't logged in!</h1>
+            <h3>Log in below</h3>
+            <a className={styles.primaryCta} href='/login'>Login</a>
+            <p className={styles.SubtleText}>Email must follow this format: example@mail.com</p>
         </div>
-        <p className="read-the-docs">
-            Click on the Vite and React logos to learn more
-        </p>
+
         </>
     )
 }
