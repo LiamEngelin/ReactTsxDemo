@@ -1,0 +1,12 @@
+.buttonPosition{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 20px;
+    padding-left: 40px;
+}
+
+.button{
+    background-color: var(--btn-bg);
+    color: var(--text-color);
+}

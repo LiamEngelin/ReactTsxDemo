@@ -9,7 +9,7 @@ export const LoginForms = () => {
 
     const [loggedInStatus, setLoggedInStatus] = useState("Currently signed out")
 
-    const [passwordWarning, setPasswordWarning] = useState(""); 
+    const [passwordWarning, setPasswordWarning] = useState<string>(""); 
 
     const passwordOk = useMemo(() => password.trim().length >= 6, [password]); 
 

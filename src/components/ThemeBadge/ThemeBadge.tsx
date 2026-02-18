@@ -1,0 +1,16 @@
+import { useApp } from '../../context/appContext'
+import styles from './themebadge.module.css'
+
+export const ThemeBadge = () => {
+    console.log("Rendered ThemeIcon");
+
+    const { theme } = useApp();
+
+    return (
+    <>
+        <div className={styles.currentTheme}>
+            <p>{theme === 'light' ? '☀️' : '🌙'}</p>
+        </div>
+    </>
+    );
+}
