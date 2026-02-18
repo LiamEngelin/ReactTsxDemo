@@ -14,3 +14,13 @@
   background: rgba(255, 255, 255, 0.92);
   color: rgba(10, 10, 14, 0.92);
 }
+
+.UsernameSection{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  top: 0;
+  right: 20px;
+}
