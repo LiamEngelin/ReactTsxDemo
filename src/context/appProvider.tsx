@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useMemo, useState } from "react";
-import { AppContext, type Theme, type AppContextValue } from "../context/appContext";
+import { AppContext, type Theme, type AppContextValue } from "./appContext";
 
 export const AppProvider = ({ children }: { children: React.ReactNode }) => {
   const [theme, setThemeState] = useState<Theme>(() => {
