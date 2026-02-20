@@ -1,4 +1,4 @@
-import {get, post} from '../apis/client'
+import client  from '../apis/client.reactquery'
 
 export type Task = {
     id: number;
@@ -12,9 +12,11 @@ export type CreateTaskInput = {
 }
 
 export async function getTasks(): Promise<Task[]> {
-    return get<Task[]>("/posts");
+    const { data } = await client.get("/posts");
+    return data;
 }
 
 export async function createTask(input: CreateTaskInput): Promise<Task> {
-    return post<Task, CreateTaskInput>("/posts", input)
+    const { data} = await client.post("/posts", input);
+    return data;
 }

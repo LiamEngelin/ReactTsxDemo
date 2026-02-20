@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { getTasks, createTask } from "../../services/tasks.service";
-import { type Task, type CreateTaskInput } from "../../services/tasks.service";
+import { getTasks, createTask } from "../../services/tasks.service.manual";
+import { type Task, type CreateTaskInput } from "../../services/tasks.service.manual";
 
 export const TasksPageManual = () => {
 
@@ -11,7 +11,7 @@ export const TasksPageManual = () => {
     const [title, setTitle] = useState<string>("");
     const [body, setBody] = useState<string>("");
     const [isCreating, setIsCreating] = useState<boolean>(false);
-    const [createError, setCreateError] = useState<string | null>(null)
+    const [createError, setCreateError] = useState<string | null>(null);
 
     useEffect(() => {
         let ignore: boolean = false;
