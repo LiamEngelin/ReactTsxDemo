@@ -56,9 +56,11 @@ I used the "manual insert" method to insert thereturned task into the tasks stat
 #
 4. What would be annoying if you had 5 different pages doing this pattern?
 
+Having to write the same logic for error handling and race condition prevention for every single page that fetches the api.  
 #
 5. Based on this experience, what do you *hope* a library like React Query can do for you?
 
+I hope react query does all the heavy lifting for me. So if I want to fetch a list of data, react query will make sure there are no race conditions and does error handling for me. I also read that react query takes care of caching, which I have no clue how to implement manually, that would be very handy if true.   
 #
 6. What did your `client.ts` wrapper do for you compared to calling `fetch` directly everywhere?
 

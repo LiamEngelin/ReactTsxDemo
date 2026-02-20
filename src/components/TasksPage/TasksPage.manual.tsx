@@ -13,8 +13,6 @@ export const TasksPageManual = () => {
     const [isCreating, setIsCreating] = useState<boolean>(false);
     const [createError, setCreateError] = useState<string | null>(null)
 
-
-
     useEffect(() => {
         let ignore: boolean = false;
         setIsLoading(true);

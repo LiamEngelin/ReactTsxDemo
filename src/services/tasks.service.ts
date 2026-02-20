@@ -12,7 +12,7 @@ export type CreateTaskInput = {
 }
 
 export async function getTasks(): Promise<Task[]> {
-    return get<Task[]>("/postsa");
+    return get<Task[]>("/posts");
 }
 
 export async function createTask(input: CreateTaskInput): Promise<Task> {
